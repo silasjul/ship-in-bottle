@@ -2,12 +2,24 @@
 
 import { useEffect, useState } from 'react';
 import { Leva } from 'leva';
-import { useCubeTweaks } from '@/hooks/leva/useCubeTweaks';
+import { useBottleTweaks } from '@/hooks/leva/useBottleTweaks';
+import { useShipTweaks } from '@/hooks/leva/useShipTweaks';
+import { useWaterTweaks } from '@/hooks/leva/useWaterTweaks';
+import { useRenderTweaks } from '@/hooks/leva/useRenderTweaks';
+import { useAtmosphereTweaks } from '@/hooks/leva/useAtmosphereTweaks';
+import { useEffectsTweaks } from '@/hooks/leva/useEffectsTweaks';
 import { useLogButton } from '@/hooks/leva/useLogButton';
+import { useCameraButton } from '@/hooks/leva/useCameraButton';
 
 export default function LevaControls() {
-  useCubeTweaks();
+  useBottleTweaks();
+  useShipTweaks();
+  useWaterTweaks();
+  useRenderTweaks();
+  useAtmosphereTweaks();
+  useEffectsTweaks();
   useLogButton();
+  useCameraButton();
 
   const [hidden, setHidden] = useState(false);
 
