@@ -32,8 +32,8 @@ export const WATER_DEFAULTS: WaterConfig = {
   opacity: 0.2,
   edgeFade: 0.5,
 
-  simSpeed: 2,
-  damping: 0.996,
+  simSpeed: 1,
+  damping: 0.992,
   rainRate: 0,
   dropRadius: 0.31,
   dropStrength: 0.225,
